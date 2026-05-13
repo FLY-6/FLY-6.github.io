@@ -4,7 +4,7 @@ date: "2026-05-01"
 excerpt: "系统梳理 Git 的核心概念和常见的团队协作工作流，包括 Git Flow、GitHub Flow、Trunk-Based Development 等，帮你选择适合团队的协作方式。"
 tags: ["Git", "DevOps", "工具", "团队协作"]
 category: "工具与效率"
-author: "学记作者"
+author: "学习笔记作者"
 readingTime: 7
 ---
 

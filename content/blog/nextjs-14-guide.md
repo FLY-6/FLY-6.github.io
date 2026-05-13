@@ -4,7 +4,7 @@ date: "2026-05-10"
 excerpt: "深入了解 Next.js 14 的核心特性，包括 App Router、Server Components、Server Actions 等，帮助你快速上手现代化的 React 全栈开发。"
 tags: ["Next.js", "React", "前端开发", "全栈"]
 category: "前端开发"
-author: "学记作者"
+author: "学习笔记作者"
 readingTime: 8
 ---
 

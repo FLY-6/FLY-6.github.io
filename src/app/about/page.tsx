@@ -11,14 +11,14 @@ export default function AboutPage() {
             M
           </div>
           <div>
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white !my-0">学记作者</h2>
+            <h2 className="text-xl font-bold text-slate-900 dark:text-white !my-0">学习笔记作者</h2>
             <p className="text-sm text-slate-500 dark:text-slate-400 !my-1">终身学习者 · 开发者</p>
           </div>
         </div>
 
         <h2>关于本站</h2>
         <p>
-          欢迎来到「学记」—— 一个记录学习历程、分享技术心得的个人博客。
+          欢迎来到「学习笔记」—— 一个记录学习历程、分享技术心得的个人博客。
           在这里，我会记录自己在编程、技术以及其他领域的所学所思。
         </p>
         <p>

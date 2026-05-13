@@ -4,7 +4,7 @@ date: "2026-05-05"
 excerpt: "探索 TypeScript 中的高级类型用法，包括泛型约束、条件类型、映射类型、模板字面量类型等，帮助你写出更安全、更优雅的类型定义。"
 tags: ["TypeScript", "编程语言", "前端开发"]
 category: "编程语言"
-author: "学记作者"
+author: "学习笔记作者"
 readingTime: 10
 ---
 

@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="text-xl font-bold gradient-text">
-              📝 学记
+              📝 学习笔记
             </Link>
             <p className="mt-3 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
               记录学习历程，分享技术心得。一个开发者的个人博客与知识库。
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-400 dark:text-slate-500">
-          © {currentYear} 学记 — 用 ❤️ 和 Next.js 构建
+          © {currentYear} 学习笔记 — 用 ❤️ 和 Next.js 构建
         </div>
       </div>
     </footer>

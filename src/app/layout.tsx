@@ -5,8 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "学记 - 个人博客",
-    template: "%s | 学记",
+    default: "学习笔记 - 个人博客",
+    template: "%s | 学习笔记",
   },
   description: "记录学习历程，分享技术心得的个人博客",
 };

@@ -4,7 +4,7 @@ date: "2026-05-08"
 excerpt: "分享 Tailwind CSS 在实际项目中的实用技巧和最佳实践，包括响应式设计、暗黑模式、组件封装等，让你的开发效率翻倍。"
 tags: ["Tailwind CSS", "CSS", "前端开发", "UI设计"]
 category: "前端开发"
-author: "学记作者"
+author: "学习笔记作者"
 readingTime: 6
 ---
 
