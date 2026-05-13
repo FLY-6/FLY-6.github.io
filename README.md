@@ -45,10 +45,10 @@ npm start
 如果你想把网站发布到 GitHub Pages：
 
 1. 将仓库 push 到 GitHub 的 `main` 分支。
-2. Actions 会自动构建并部署到 GitHub Pages。
-3. 如果仓库名不是 `username.github.io`，可以在仓库设置中将 Pages 源设置为 `gh-pages` 分支，或在 `Settings > Pages` 中查看生成页面地址。
+2. GitHub Actions 会自动构建并部署到 Pages。
+3. 确保仓库 `Settings > Pages` 的来源配置为 `GitHub Actions`，而不是 `main` 分支或 `docs/` 目录。
 
-> 如果你使用的是项目页面（例如 `https://username.github.io/repo`），可以在仓库 Secrets 中添加 `GITHUB_PAGES_BASE_PATH`，值为 `/${repo}`。
+> 对于项目页面（例如 `https://username.github.io/repo`），工作流现在会自动为你设置 `basePath`，无需手动添加 secret。
 
 ```bash
 npm run build
