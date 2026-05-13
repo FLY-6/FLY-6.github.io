@@ -28,7 +28,7 @@ cd blog
 npm install
 
 # 3. 启动开发服务器
-npm run dev
+npm  
 ```
 
 浏览器访问 **http://localhost:3000** 即可看到博客。
@@ -39,6 +39,22 @@ npm run dev
 npm run build
 npm start
 ```
+
+### 部署到 GitHub Pages
+
+如果你想把网站发布到 GitHub Pages：
+
+1. 将仓库 push 到 GitHub 的 `main` 分支。
+2. Actions 会自动构建并部署到 GitHub Pages。
+3. 如果仓库名不是 `username.github.io`，可以在仓库设置中将 Pages 源设置为 `gh-pages` 分支，或在 `Settings > Pages` 中查看生成页面地址。
+
+> 如果你使用的是项目页面（例如 `https://username.github.io/repo`），可以在仓库 Secrets 中添加 `GITHUB_PAGES_BASE_PATH`，值为 `/${repo}`。
+
+```bash
+npm run build
+```
+
+构建完成后，静态文件会输出到 `out/` 目录，可以直接部署到 GitHub Pages。
 
 ## 📁 项目结构
 
@@ -78,13 +94,7 @@ blog/
 
 ```markdown
 ---
-title: "我的第一篇文章"
-date: "2026-05-13"
-excerpt: "这篇文章的简介描述..."
-tags: ["React", "前端"]
-category: "前端开发"
-author: "你的名字"
-readingTime: 5
+
 ---
 
 ## 正文开始
