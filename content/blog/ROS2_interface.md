@@ -33,13 +33,18 @@ src
 ```
 # 4.在CMakeLists.txt中添加依赖
 ```bash
-find_package(rosidl_default_generators REQUIRED)
+find_package(rosidl_default_generators REQUIRED)//找接口代码生成工具
 ```
 ```bash
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/My_msg.msg"
   "srv/My_msg.srv"
-)
+)// 为当前包 ${PROJECT_NAME} 中的这些接口文件生成代码
+```
+```bash
+install(DIRECTORY launch config
+  DESTINATION share/${PROJECT_NAME}
+)//把包里的 launch/ 和 config/ 文件夹复制到 ROS 2 的安装目录 install/ 中
 ```
 # 5.编译和添加环境变量
 ```bash
