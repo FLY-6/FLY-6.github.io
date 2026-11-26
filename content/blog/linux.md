@@ -1,3 +1,12 @@
+---
+title: "Linux驱动学习"
+date: "2026-11-26"
+excerpt: "Linux"
+tags: ["Linux"]
+category: "Linux"
+author: "FLY"
+readingTime: 
+---
 # 1.进程
 操作系统正在执行的一个程序实例
 查看所有进程
