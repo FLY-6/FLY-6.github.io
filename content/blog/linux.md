@@ -42,7 +42,7 @@ ifconfig eth0
 # day1
 ## 1.字符设备
 字符设备就是按字节进行读写的设备  
-![1794983687247](image/linux/1794983687247.png)
+![1794983687247](/images/linux/1794983687247.png)
 字符设备加载与卸载  
 insmod(加载驱动时xxx_init函数被调用)  
 rmmod(卸载驱动时xxx_exit函数被调用)  
@@ -140,7 +140,7 @@ const char
 1. MX6U IO 命名
 # day4 11.23
 ## DTS DTB DTC
-![1795404621081](public/image/linux/1795404621081.png)
+![1795404621081](/images/linux/1795404621081.png)
 1. DTS:设备树源码文件 DTB：编译后二进制文件 DTC：编译工具
 2. DTS语法
 设备树头文件扩展名.dsti
@@ -155,7 +155,7 @@ adress-cells:**如果为2字节点高位和低位拼起来做地址**
 ranges属性：ranges 属性值可以为空或者按照(child-bus-address,parent-bus-address,length) ranges 是一个地址映射/转换表  
 length：子总线中有多少连续的地址范围可以通过 ranges 映射到父总线  
 ## linux内核 compatible 属性找到对应的设备的函数调用过程
-![1795419554921](public/image/linux/1795419554921.png)
+![1795419554921](/images/linux/1795419554921.png)
 | 内容 | dt_compat | 根节点 compatible |
 |---|---|---|
 | 定义位置 | mach-imx6ul.c | imx6ull-alientek-emmc.dts |
@@ -168,9 +168,9 @@ length：子总线中有多少连续的地址范围可以通过 ranges 映射到
 &某个节点
 ## 特殊节点
 aliases：定义节点别名
-chosen:![1795435143646](public/image/linux/1795435143646.png)将uboot中bootarg属性传入chosen节点
+chosen:![1795435143646](/images/linux/1795435143646.png)将uboot中bootarg属性传入chosen节点
 ## Linux 内核解析 DTB 文件
-![1795435828813](public/image/linux/1795435828813.png)
+![1795435828813](/images/linux/1795435828813.png)
 ## 设备树常用OF操作函数(linux/of.h)
 查找节点的OF函数
 查找子父节点的OF函数  
@@ -193,7 +193,7 @@ void __iomem *of_iomap(struct device_node *np,int index)
 mux_reg：决定这个引脚用来做什么。  
 conf_reg：决定这个引脚以什么电气特性工作  
 1. PIN驱动程序
-设备树中的 compatible 属性值会和 of_device_id 中字符串比较->platform平台驱动->imx6ul_pinctrl_probe函数执行->![1795592704715](public/image/linux/1795592704715.png)->imx_pinctrl_parse_groups 负责获取设备树中关于 PIN 的配置信息  
+设备树中的 compatible 属性值会和 of_device_id 中字符串比较->platform平台驱动->imx6ul_pinctrl_probe函数执行->![1795592704715](/images/linux/1795592704715.png)->imx_pinctrl_parse_groups 负责获取设备树中关于 PIN 的配置信息
 pinctrl_register，此函数用于向 Linux 内核注册一个 PIN 控制器
 ## gpio驱动程序
 设备树中的 compatible 属性值会和 of_device_id 中字符串比较->platform平台驱动->mxc_gpio_probe()->(1)获取设备树节点(2)调用mxc_gpio_get_hw()函数获取寄存器资源(3)调用platform_get_resource函数获取GPIO基地址(4)内存映射(5)中断服务(6)bgpio_init()初始化 GPIO 控制器的操作结构体(6)gpiochip_add()将 I.MX6ULL 的 GPIO 控制器注册到 Linux GPIO 子系统
