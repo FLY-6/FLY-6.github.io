@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
+import remarkGfm from "remark-gfm";
 import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "content/blog");
@@ -72,7 +73,7 @@ export function getPostBySlug(slug: string): Post | null {
 
 /** 将 Markdown 转为 HTML */
 export async function markdownToHtml(markdown: string): Promise<string> {
-  const result = await remark().use(html, { sanitize: false }).process(markdown);
+  const result = await remark().use(remarkGfm).use(html, { sanitize: false }).process(markdown);
   return result.toString();
 }
 

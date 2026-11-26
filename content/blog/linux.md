@@ -18,18 +18,21 @@ ps -ef --forest
 top
 ```
 杀死进程
+```bash
 kill PID
 npx @deepseek-ai/dsh web
+```
 # linux文件系统
 NFS（Network File System，网络文件系统）**是一种网络文件共享服务，可以让多台 Linux 电脑通过网络访问同一个目录，就像访问本地硬盘一样
 因为 brltty 把你的开发板误认成了盲文点字设备。
 
 brltty 是用于支持点字显示器的软件。一些点字设备也使用 CH340 USB 转串口芯片，和你的开发板拥有相同的 USB 标识：1a86:7523。它的设备匹配规则覆盖了这个标识，无法仅凭它区分两者
+```bash
 ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa root@192.168.5.99
 sudo minicom -D /dev/ttyUSB0 -b 115200
 ifconfig eth0 192.168.5.99 netmask 255.255.255.0
 ifconfig eth0
-
+```
 | 快捷键 | 功能 |
 |---|---|
 | Ctrl+A → Z | 显示帮助菜单 |
@@ -38,7 +41,10 @@ ifconfig eth0
 | Ctrl+A → E | 开启/关闭本地回显 |
 | Ctrl+A → L | 捕获串口日志 |
 | Ctrl+A → Q | 退出但不复位串口 |
-传文件 scp  chrdevbase.ko chrdevbaseApp imx6ull:/lib/modules/4.1.15-ge48931b1/
+传文件 
+```bash
+scp  chrdevbase.ko chrdevbaseApp imx6ull:/lib/modules/4.1.15-ge48931b1/
+```
 # day1
 ## 1.字符设备
 字符设备就是按字节进行读写的设备  
