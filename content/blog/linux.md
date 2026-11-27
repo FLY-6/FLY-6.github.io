@@ -22,6 +22,9 @@ top
 kill PID
 npx @deepseek-ai/dsh web
 ```
+```bash
+echo none > /sys/class/leds/sys-led/trigger // 改变 LED 的触发模式
+```
 # linux文件系统
 NFS（Network File System，网络文件系统）**是一种网络文件共享服务，可以让多台 Linux 电脑通过网络访问同一个目录，就像访问本地硬盘一样
 因为 brltty 把你的开发板误认成了盲文点字设备。
@@ -43,7 +46,7 @@ ifconfig eth0
 | Ctrl+A → Q | 退出但不复位串口 |
 传文件 
 ```bash
-scp  chrdevbase.ko chrdevbaseApp imx6ull:/lib/modules/4.1.15-ge48931b1/
+scp gpioled.ko ledApp imx6ull:/lib/modules/4.1.15-ge48931b1/
 ```
 # day1
 ## 1.字符设备
